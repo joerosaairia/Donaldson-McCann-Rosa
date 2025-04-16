@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaldson, McCann, Rosa - Law Firm</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #1a365d;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #2c5282;
+            padding: 1rem;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/api/placeholder/1200/400');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .practice-areas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .practice-area {
+            background-color: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .attorneys {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .attorney {
+            text-align: center;
+        }
+
+        .attorney img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .footer {
+            background-color: #1a365d;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-info {
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Donaldson, McCann, Rosa</h1>
+        <p>Excellence in Legal Services</p>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#practice-areas">Practice Areas</a></li>
+            <li><a href="#attorneys">Attorneys</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div>
+            <h2>Protecting Your Rights</h2>
+            <p>With over 50 years of combined experience</p>
+        </div>
+    </div>
+
+    <main class="content">
+        <section id="practice-areas">
+            <h2>Practice Areas</h2>
+            <div class="practice-areas">
+                <div class="practice-area">
+                    <h3>Corporate Law</h3>
+                    <p>Expert guidance for businesses of all sizes</p>
+                </div>
+                <div class="practice-area">
+                    <h3>Civil Litigation</h3>
+                    <p>Resolving complex disputes effectively</p>
+                </div>
+                <div class="practice-area">
+                    <h3>Real Estate Law</h3>
+                    <p>Comprehensive real estate legal services</p>
+                </div>
+                <div class="practice-area">
+                    <h3>Family Law</h3>
+                    <p>Compassionate family legal support</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="attorneys">
+            <h2>Our Attorneys</h2>
+            <div class="attorneys">
+                <div class="attorney">
+                    <img src="https://media.licdn.com/dms/image/v2/C4E03AQEStQWl34RfjQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1548267884835?e=1750291200&v=beta&t=KTAPuJJt0t4-xSAJstlmgdhkUfEcAoaZiuatiWs1BQc" alt="James Donaldson">
+                    <h3>Price Donaldson</h3>
+                    <p>Managing Partner</p>
+                </div>
+                <div class="attorney">
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQEGr0-ueVWLNw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729701630170?e=1750291200&v=beta&t=ReCCjJcNOorQL4a4FcTAVKTY2H6V6VZTHKvpjJ8eaTg" alt="Sarah McCann">
+                    <h3>Austin McCann</h3>
+                    <p>Senior Partner</p>
+                </div>
+                <div class="attorney">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQEgqmZf9RiZ_Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724201046742?e=1750291200&v=beta&t=GWeLhvKxSThJdGFNWEVLExGk1RT9fathKACLe0Mxnxc" alt="Michael Rosa">
+                    <h3>Joe Rosa</h3>
+                    <p>Partner</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-info">
+            <h2>Contact Us</h2>
+            <p>123 Legal Street, Suite 100</p>
+            <p>New York, NY 10001</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@dmrlaw.com</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Donaldson, McCann, Rosa. All rights reserved.</p>
+    </footer>
+
+    <div id="root"></div>
+    <script type="module">
+        import AiriaChat from "https://demo.chat.airia.ai/api/get-chat-embed"
+        AiriaChat.init({
+            pipelineId: "f1fb3b50-ed40-4212-acfe-10bd6acb7400",
+            apiKey: "ak-MzU2OTI2MDk2MXwxNzQ0ODA3MjU0MzQxfEFpcmlhIExlZ2FsfDF8MTc4NzE2MDE4",
+            chatHost: "https://demo.chat.airia.ai",
+            greeting: "Hi! How can I assist you today?\n\nAsk your question or click one of the suggestions below:\n\n<airiaMessageButton>What Services does Donaldson, McCann, Rosa offer?</airiaMessageButton> <airiaMessageButton>Who are the attorneys?</airiaMessageButton> <airiaMessageButton>How do I contact your firm?</airiaMessageButton> <airiaMessageButton>I need to schedule a consultation</airiaMessageButton>",
+            imagePath: "https://png.pngtree.com/png-vector/20220611/ourmid/pngtree-chatbot-icon-chat-bot-robot-png-image_4841963.png",
+            imageSize: "small"
+        })
+    </script>
+</body>
+</html>
