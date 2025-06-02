@@ -182,16 +182,15 @@
     </footer>
 
     <div id="root"></div>
-    <script type="module">
+     <script type="module">
         import AiriaChat from "https://demo.chat.airia.ai/api/get-chat-embed"
-        AiriaChat.init({
-            pipelineId: "f1fb3b50-ed40-4212-acfe-10bd6acb7400",
-            apiKey: "ak-MzU2OTI2MDk2MXwxNzQ0ODA3MjU0MzQxfEFpcmlhIExlZ2FsfDF8MTc4NzE2MDE4",
-            chatHost: "https://demo.chat.airia.ai",
-            greeting: "Hi! How can I assist you today?\n\nAsk your question or click one of the suggestions below:\n\n<airiaMessageButton>What Services does Donaldson, McCann, Rosa offer?</airiaMessageButton> <airiaMessageButton>Who are the attorneys?</airiaMessageButton> <airiaMessageButton>How do I contact your firm?</airiaMessageButton> <airiaMessageButton>I need to schedule a consultation</airiaMessageButton>",
-            imagePath: "https://joerosaairia.github.io/Donaldson-McCann-Rosa/boticon.png",
-            imageSize: "small"
-        })
+        AiriaChat.init({pipelineId: "f1fb3b50-ed40-4212-acfe-10bd6acb7400",
+                        apiKey: "ak-MzQzODcyNjA0M3wxNzQ4ODY4NzE2OTUwfEFpcmlhIExlZ2FsfDF8MjMzMjYwMzgyNCAg",
+                        apiUrl: "https://demo.embed-api.airia.ai",
+                        greeting: "Hello! How can I assist you today?",
+                        imagePath: "https://yoursite.com/assets/chatbot-icon.png",
+                        imageSize: "small",
+                        imageBgColor: "#FFFFFF"})
     </script>
 </body>
 </html>
